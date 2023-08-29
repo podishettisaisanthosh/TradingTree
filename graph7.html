@@ -1,0 +1,605 @@
+<html>
+<head>
+    <title>graphs</title>
+    <style>
+  
+    button {
+        position: relative;
+        width: 22em;
+        height: 8em;
+        outline: none;
+        transition: 0.1s;
+        background-color: transparent;
+        border: none;
+        font-size: 13px;
+        font-weight: bold;
+        color: #ddebf0;
+       
+    left: 35%;
+       
+      }
+      
+      #clip {
+        --color: #2761c3;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        width: 200%;
+        height: 200%;
+        border: 5px double var(--color);
+        box-shadow: inset 0px 0px 15px #195480;
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      }
+      
+      .arrow {
+        position: absolute;
+        transition: 0.2s;
+        background-color: #2761c3;
+        top: 35%;
+        width: 22%;
+        height: 60%;
+      }
+      
+      #leftArrow {
+        left: -13.5%;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+      }
+      
+      #rightArrow {
+        -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+        left: 102%;
+      }
+      
+      button:hover #rightArrow {
+        background-color: #27c39f;
+        left: -15%;
+        animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+      }
+      
+      button:hover #leftArrow {
+        background-color: #27c39f;
+        left: 103%;
+        animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+      }
+      
+      .corner {
+        position: absolute;
+        width: 8em;
+        height: 8em;
+        background-color: #2761c3;
+        box-shadow: inset 1px 1px 8px #2781c3;
+        transform: scale(1) rotate(45deg);
+        transition: 0.2s;
+      }
+      
+      #rightTop {
+        top: -1.98em;
+        left: 91%;
+      }
+      
+      #leftTop {
+        top: -1.96em;
+        left: -3.0em;
+      }
+      
+      #leftBottom {
+        top: 2.10em;
+        left: -2.15em;
+      }
+      
+      #rightBottom {
+        top: 45%;
+        left: 88%;
+      }
+      
+      button:hover #leftTop {
+        animation: 0.1s ease-in-out 0.05s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover #rightTop {
+        animation: 0.1s ease-in-out 0.15s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover #rightBottom {
+        animation: 0.1s ease-in-out 0.25s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover #leftBottom {
+        animation: 0.1s ease-in-out 0.35s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover .corner {
+        transform: scale(1.25) rotate(45deg);
+      }
+      
+      button:hover #clip {
+        animation: 0.2s ease-in-out 0.55s both greenLight8;
+        --color: #27c39f;
+      }
+      
+      @keyframes changeColor8 {
+        from {
+          background-color: #2781c3;
+        }
+      
+        to {
+          background-color: #27c39f;
+        }
+      }
+      
+      @keyframes lightEffect8 {
+        from {
+          box-shadow: 1px 1px 5px #27c39f;
+        }
+      
+        to {
+          box-shadow: 0 0 2px #27c39f;
+        }
+      }
+      
+      @keyframes greenLight8 {
+        from {
+        }
+      
+        to {
+          box-shadow: inset 0px 0px 32px #27c39f;
+        }
+      }
+      
+      @keyframes leftArrow8 {
+        from {
+          transform: translate(0px);
+        }
+      
+        to {
+          transform: translateX(10px);
+        }
+      }
+      
+      @keyframes rightArrow8 {
+        from {
+          transform: translate(0px);
+        }
+      
+        to {
+          transform: translateX(-10px);
+        }
+      }
+      
+    </style>   
+    <style>
+        .sai1 {
+ border: none;
+ position: relative;
+ width: 200px;
+ height: 73px;
+ padding: 0;
+ z-index: 2;
+ -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+ mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+ -webkit-mask-size: 100%;
+ cursor: pointer;
+ background-color: transparent;
+ transform: translateY(8px)
+}
+
+.sai1:after {
+ content: '';
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ box-shadow: 0px 0 0 0 white;
+ transition: all 2s ease;
+}
+.sai1:hover:after {
+ box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+
+.sai1 span {
+ position: absolute;
+ width: 100%;
+ font-size: 15px;
+ font-weight: 100;
+ left: 50%;
+ top: 39%;
+ letter-spacing: 3px;
+ text-align: center;
+ transform: translate(-50%,-50%);
+ color: black;
+ transition: all 2s ease;
+}
+
+.sai1:hover span {
+ color: white;
+}
+
+.sai1:before {
+ content: '';
+ position: absolute;
+ width: 0;
+ height: 100%;
+ background-color: black;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ transition: all 1s ease;
+}
+
+.sai1:hover:before {
+ width: 100%;
+}
+
+.fancy {
+ background-color: transparent;
+ border: 2px solid #000;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ float: right;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 1.25em 2em;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ font-size: 13px;
+}
+
+.fancy::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: lightgreen;
+ top: 50%;
+ left: 1.5em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.3s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: lightgreen;
+}
+
+.fancy .top-key {
+ height: 2px;
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+ color: white;
+ background: lightgreen;
+}
+
+.fancy:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancy:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}
+.fancy{
+    position: absolute;
+    margin-left: 15%;
+}
+
+
+.fancing {
+ background-color: transparent;
+ border: 2px solid red;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ float: right;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 1.25em 2em;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ font-size: 13px;
+}
+
+.fancing::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: red;
+ top: 50%;
+ left: 1.5em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancing .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.3s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: red;
+}
+
+.fancing .top-key {
+ height: 2px;
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancing .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancing .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancing:hover {
+ color: white;
+ background: red;
+}
+
+.fancing:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancing:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancing:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancing:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}
+
+
+
+
+
+
+.fancing{
+    position: absolute;
+    margin-left: 50%;
+}
+
+    </style>   
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script>
+            const firebaseConfig = {
+    apiKey: "AIzaSyBa7C5AxqXG4vJSFuAzbpY8Nkp2Urj44Ng",
+    authDomain: "tradingg-9b8db.firebaseapp.com",
+    projectId: "tradingg-9b8db",
+    storageBucket: "tradingg-9b8db.appspot.com",
+    messagingSenderId: "171828512216",
+    appId: "1:171828512216:web:8a6b42de5fbead7f90dead",
+    measurementId: "G-3JV2TE5XV4"
+  };
+  firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+        </script>
+    <img src="graphss11.png" width="960" height="800">
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <button class="sai1">
+        <span>PLAY NOW</span>
+      </button>
+    <br> <br>
+    <br> 
+
+    <a class="fancy" href="#">
+        <span class="top-key"></span>
+       <span class="text" onclick="call()">               &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; CALL &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;       </span>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </a>
+      <a class="fancing" href="#" >
+        <span class="top-key"></span>
+        <span class="text" onclick="put()">                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  PUT &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;        </span>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </a>
+    <script>
+function call()
+{
+      firebase.auth().onAuthStateChanged((user) => {
+                        if (user) {
+                      
+                          firebase.database().ref('logindetails').child(user.uid).once("value").then(function(snapshot)
+                          {
+                            g=snapshot.val().balance;
+                            if(100>g)
+                                 {
+                                     alert("insufficient amount");
+                                 }
+                                 else {                          
+                                    updating=g-100  
+                                    firebase.database().ref('logindetails').child(user.uid).child("balance").set(updating);
+                                    const d = new Date();
+ currentdate= d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
+
+betttime=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+                                    alert("your money deducted after 2 min your result will update ");
+                                    firebase.database().ref('logindetails').child(user.uid).child("betting").push().set({
+                                      
+     call:"callqueue",
+     date:currentdate,
+     time:betttime
+
+
+      });
+                                    setTimeout(function(){ window.location.replace('mainpage.html') }, 3000);
+                                    
+                                
+                        }
+                     
+                            
+                          });
+
+                        
+                        } else {
+                         
+                        }
+                      });
+}
+
+    </script>
+    <script>
+      function put()
+{
+    
+    firebase.auth().onAuthStateChanged((user) => {
+                        if (user) {
+                      
+                          firebase.database().ref('logindetails').child(user.uid).once("value").then(function(snapshot)
+                          {
+                            g=snapshot.val().balance;
+                            if(100>g)
+{
+  alert("insufficient amount");
+}
+                          });
+                        
+                        } else {
+                            firebase.database().ref("bigboss").child("users").child(uid).child("balance").set();
+                        }
+                      });  
+
+
+
+                      firebase.auth().onAuthStateChanged((user) => {
+                        if (user) {
+                      
+                          firebase.database().ref('logindetails').child(user.uid).once("value").then(function(snapshot)
+                          {
+                            g=snapshot.val().balance;
+                            if(100>g)
+                                 {
+                                     alert("insufficient amount");
+                                 }
+                                 else {                          
+                                    updating=g-100  
+                                    firebase.database().ref('logindetails').child(user.uid).child("balance").set(updating);
+                                    alert("your money deducted after 2 min your result will update ")
+
+                                    setTimeout(function(){ window.location.replace('mainpage.html') }, 3000);
+                                    
+                                
+                        }
+                     
+                            
+                          });
+
+                        
+                        } else {
+                         
+                        }
+                      });
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<html>
+    <head>
+        <style>
+            .container {
+  position: absolute;
+  top: 18%;
+  left: 55%;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  animation: rotate_3922 1.2s linear infinite;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+}
+body{
+  background-image: url(bgg.jpeg);
+}
+.container span {
+  position: absolute;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+}
+
+.container span:nth-of-type(1) {
+  filter: blur(5px);
+}
+
+.container span:nth-of-type(2) {
+  filter: blur(10px);
+}
+
+.container span:nth-of-type(3) {
+  filter: blur(25px);
+}
+
+.container span:nth-of-type(4) {
+  filter: blur(50px);
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  border: solid 5px #ffffff;
+  border-radius: 50%;
+}
+
+@keyframes rotate_3922 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 500%;
+  position: relative;
+ 
+  
+}
+
+.inputGroup input {
+  font-size: 200%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 170%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+.whole{
+    position: absolute;
+  top: 30%;
+  right: 100%;
+  width: 70%;
+  left: 20%;
+ 
+}
+button {
+  padding: 1.3em 3em;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+.card143 {
+ 
+ 
+  width: 750px;
+  height: 1100px;
+  border-radius: 70px;
+  background: lightgrey;
+  box-shadow: rgba(75, 75, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  border-color: purple;
+  border: #9b59b6;
+  
+}
+.card143{
+  position: absolute;
+  top:25%;
+  left: 16%;
+  
+}
+            </style>
+    </head>
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script>
+            const firebaseConfig = {
+    apiKey: "AIzaSyBa7C5AxqXG4vJSFuAzbpY8Nkp2Urj44Ng",
+    authDomain: "tradingg-9b8db.firebaseapp.com",
+    projectId: "tradingg-9b8db",
+    storageBucket: "tradingg-9b8db.appspot.com",
+    messagingSenderId: "171828512216",
+    appId: "1:171828512216:web:8a6b42de5fbead7f90dead",
+    measurementId: "G-3JV2TE5XV4"
+  };
+  firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+        </script>
+        <div class="container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+          <br>
+          <div class="card143"></div>
+          <div class="whole">
+          <h1>REGISTER  </h1>
+          <hr>
+          <div class="inputGroup">
+            <input type="text" id="e" >
+            <label for="name">Gmail</label>
+        </div>
+       <br>
+       <br>
+       <div class="inputGroup">
+        <input type="text"  id="n" >
+        <label for="name">username</label>
+    </div>
+    <br>
+       <br>
+        <div class="inputGroup">
+            <input type="password"  id="p" >
+            <label for="password">password</label>
+        </div>
+        <br>
+       <br>
+       <div class="inputGroup">
+        <input type="text">
+        <label for="name">giftcode</label>
+    </div>
+        <br>
+        <br>
+       
+        <button onclick="login()"> Login</button>
+        <button onclick="register()"> Register</button>
+      
+     <br>
+     <br>
+     <br>
+
+   
+</div>
+    <script>
+        
+
+        function register(){
+      
+      var e1=document.getElementById("e").value;
+  
+    
+    var usering=document.getElementById("n").value;
+    var p1=document.getElementById("p").value;
+
+            firebase.auth().createUserWithEmailAndPassword(e1,p1)
+    .then((userCredential) => {
+   
+      var user = userCredential.user;
+      firebase.database().ref('logindetails').child(user.uid).set({
+     email:e1,
+     usersname:usering,
+     balance:0
+
+      });
+   
+      setTimeout(function(){ window.location.replace('assetss.html') }, 4000);
+      alert("registration successfull")
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert("registration unsuccessfull")
+    });
+
+  }
+  function login(){ 
+    setTimeout(function(){ window.location.replace('login.html') }, 3000);
+  }
+      </script>
+    </body>
+</html>

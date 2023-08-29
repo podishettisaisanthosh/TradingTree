@@ -1,0 +1,803 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+       <title>
+       Trading WEBSITE
+       </title>
+       <STYLE>
+        .a1
+{
+ 
+  max-width: 100%;
+  position:absolute;
+  top:1%;
+  height:30%;
+  border-radius:1% ;
+  
+  box-shadow: 1px 1px 15px purple;
+}
+@font-face {
+  font-family:myFirstFont;
+  src: url(monst.otf);
+
+}
+.a1{
+    background-color: black;
+}
+.a1
+{
+  scroll-behavior: smooth;
+font-family:myFirstFont;
+background: black;
+color:white;
+}
+.a2
+{
+  color:greenyellow;
+  font-size: larger;
+}
+
+
+.box1:hover{
+  
+  background:violet;
+  color:white;
+  opacity:0.3;
+  
+}
+
+       </STYLE>
+       <style>
+        .nav {
+        position: fixed;
+        left:0%;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+    }
+    
+    .nav__link:hover {
+        background-color: #eeeeee;
+    }
+    
+    .nav__link--active {
+        color: #009578;
+    }
+    
+    .nav__icon {
+        font-size: 18px;
+    }
+    .card {
+       width: 500px;
+ height: 400px;
+ color: white;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ gap: 90px;
+ overflow: visible;
+
+}
+
+.card .item {
+ border-radius: 10px;
+ width: 120%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ 
+
+}
+
+.item:hover {
+ transform: scale(0.95);
+ transition: all 0.3s;
+}
+
+.item svg {
+ width: 100px;
+ height: 40px;
+
+}
+
+.item--1 {
+ background: #c7c7ff;
+}
+
+.item--2 {
+ background: #ffd8be;
+}
+
+.item--3 {
+ background: #a9ecbf;
+}
+
+.item--4 {
+ background: #f3bbe1;
+}
+
+.quantity {
+ font-size: 25px;
+ font-weight: 800;
+}
+
+.text {
+ font-size: 12px;
+ font-family: inherit;
+ font-weight: 600;
+}
+
+.text--1 {
+ color: rgba(149,149,255,1);
+}
+
+.text--2 {
+ color: rgba(252,161,71,1);
+}
+
+.text--3 {
+ color: rgba(66,193,110,1);
+}
+
+.text--4 {
+ color: rgba(220,91,183,1);
+}
+.hj{
+  position: absolute;
+  margin:auto 0;
+  margin-top: 240;
+  align-items: center;
+  text-align: center;
+  margin-left: 10;
+  margin-right: 20;
+  margin-bottom: auto;
+  left:10%;
+  right:15%;
+  top:44%;
+
+    flex: 1;
+    text-align: center;
+
+}
+.blockchain{
+  position: absolute;
+  margin-top: 250;
+  border-radius: 5%;
+  border-style:inherit;
+  border-color: #001eff;
+  border-width: 100%;
+background-image: url(block.jpg);
+
+color:whitesmoke;
+  width: 120%;
+  height: 30%;
+ opacity: 0.8;
+
+
+}
+
+       </style>
+
+<style>
+  body{
+  font-family: 'avenirregular';
+ 
+  background-color:#f4f4f4;
+  width:100%
+}
+
+
+
+header{
+  position:fixed;
+  background:#16205E;
+  color:#ffffff;
+  padding-top:800px;
+  min-height:7.5vh;
+  border-bottom:#2B8AFF 3px solid;
+  background-color: #001eff;
+  border-radius: double;
+ }
+
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  vertical-align:top;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  width:20%;
+  float:left;
+  padding-top:0px;
+  padding-bottom:20px;
+
+}
+
+
+
+header nav{
+  float:right;
+  margin-top:20px;
+  
+}
+.container {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  margin: 0;
+ 
+  font-family: sans-serif;
+  font-weight: 100;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+section{
+  margin: 50px;
+}
+
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+.tabling{
+  position: absolute;
+  top:80%;
+  text-align: center;
+  align-items: center;
+  width:100%;
+}
+.columnnn {
+  float: left;
+  width: 80%;
+  padding: 0 10px;
+  margin-left: 1%;
+  margin-right: 10;
+}
+
+
+.rowsss {margin: 0 -5px;}
+
+
+.rowsss:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .columnnn {
+    width: 220%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.carddd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  background-image: url(block.jpg);
+  background-repeat: no-repeat;
+  background-position: 70%;
+  color:whitesmoke;
+}
+.nav{
+  position: fixed;
+}
+.responstable{
+  position:absolute;
+  
+  width: 220%;
+  
+}
+.responstables{
+ 
+  
+  width: 220%;
+  
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .gallery-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 180%;
+}
+
+.thumbnails {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.thumbnails div {
+  width: 8px;
+  height: 4px;
+  cursor: pointer;
+  background: #aaa;
+  border-radius: 100%;
+}
+
+.thumbnails div.highlighted {
+  background-color: #777;
+}
+
+.slides {
+  margin: 0 16px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  width: 540px;
+  padding: 0 0.25rem;
+  height: 320px;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+}
+
+.slides img {
+  width: 540px;
+  object-fit: contain;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+</style>
+<style>
+  button {
+  font-size: 24px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: orange;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: orange;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.bt98{
+  position:absolute;
+  color:red;
+  left:75%;
+  size: 200%;
+  
+
+}
+body{
+  background-image: url(bgg.jpeg);
+}
+</style>
+    </head>
+    <body onload="getRandomColor()">
+      
+      <script>
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (i = 0; i < 6; i++ ) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        </script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script>
+            const firebaseConfig = {
+    apiKey: "AIzaSyBa7C5AxqXG4vJSFuAzbpY8Nkp2Urj44Ng",
+    authDomain: "tradingg-9b8db.firebaseapp.com",
+    projectId: "tradingg-9b8db",
+    storageBucket: "tradingg-9b8db.appspot.com",
+    messagingSenderId: "171828512216",
+    appId: "1:171828512216:web:8a6b42de5fbead7f90dead",
+    measurementId: "G-3JV2TE5XV4"
+  };
+  firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+        </script>
+    <br>
+    <center><button class="bt98">
+      Trading Tree
+  </button></center>
+    <br>
+
+    <br>
+    <br>
+    <br>
+<div class="header" >
+       
+  <div class="gallery-container">
+    <div class="thumbnails"></div>
+    <div class="slides">
+     
+      <div><img src="img2.jpg"  ></div>
+      <div><img src="img3.jpg"  ></div>
+      <div><img src="img4.jpg"  ></div>
+      <div><img src="img5.jpeg"  ></div>
+      <div><img src="img6.jpeg"  ></div>
+ 
+    </div>
+  </div>  
+       </div> 
+       <br>
+      
+       <i style="font-size:24px" class="fa">&#xf05a;</i>
+<marquee id="marquee" class="marr" direction="right">NEW UPDATES SOON</marquee>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br> <div class="hj">
+  <div class="card">
+    <div class="item item--1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16"> <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"/> </svg>
+      <span class="quantity"> BTC/USDT </span>
+      <span class="text text--1"> 24600.08 </span>
+    </div>
+    <div class="item item--2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/></svg>    <span class="quantity"> ETH/USDT </span>
+      <span class="text text--2"> 1658.58</span>
+    </div>
+    <div class="item item--3">
+     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 7 3.339844 L 15 3.339844 L 15 20 L 7 20 Z M 7 3.339844 " clip-rule="nonzero"/></clipPath><clipPath id="id2"><path d="M 5.203125 3.339844 L 23 3.339844 L 23 23 L 5.203125 23 Z M 5.203125 3.339844 " clip-rule="nonzero"/></clipPath><clipPath id="id3"><path d="M 7 10 L 22 10 L 22 25.839844 L 7 25.839844 Z M 7 10 " clip-rule="nonzero"/></clipPath><clipPath id="id4"><path d="M 5.203125 6 L 21 6 L 21 25.839844 L 5.203125 25.839844 Z M 5.203125 6 " clip-rule="nonzero"/></clipPath><clipPath id="id5"><path d="M 14 3.339844 L 23 3.339844 L 23 21 L 14 21 Z M 14 3.339844 " clip-rule="nonzero"/></clipPath><clipPath id="id6"><path d="M 14 6 L 24.796875 6 L 24.796875 23 L 14 23 Z M 14 6 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#id1)"><path fill="rgb(1.568604%, 2.349854%, 2.349854%)" d="M 14.992188 6.253906 L 7.40625 3.609375 L 7.40625 19.914062 L 14.992188 17.492188 L 14.992188 6.253906 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#id2)"><path fill="rgb(100%, 100%, 100%)" d="M 14.808594 6.246094 L 22.6875 3.601562 L 22.6875 19.90625 L 14.808594 17.484375 L 14.808594 6.246094 M 5.4375 22.769531 L 14.808594 19.6875 L 14.808594 6.246094 L 5.4375 9.328125 L 5.4375 22.769531 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#id3)"><path fill="rgb(1.568604%, 2.349854%, 2.349854%)" d="M 19.078125 22.972656 L 20.40625 25.132812 L 21.109375 23.125 L 19.078125 22.972656 M 8.625 10.878906 C 8.574219 10.828125 8.691406 11.273438 8.851562 11.433594 C 9.132812 11.714844 9.355469 11.75 9.472656 11.753906 C 9.730469 11.765625 10.054688 11.691406 10.242188 11.609375 C 10.429688 11.535156 10.75 11.371094 10.875 11.132812 C 10.898438 11.082031 10.972656 10.992188 10.925781 10.78125 C 10.890625 10.621094 10.785156 10.5625 10.660156 10.570312 C 10.535156 10.582031 10.144531 10.683594 9.960938 10.738281 L 9.21875 10.945312 C 9.054688 10.980469 8.6875 10.929688 8.625 10.875 M 13.355469 16.171875 L 11.535156 15.417969 L 10.71875 15.070312 L 11.707031 13.429688 L 12.417969 11.992188 C 12.429688 11.925781 12.449219 11.648438 12.433594 11.585938 C 12.421875 11.519531 12.199219 11.644531 11.894531 11.746094 C 11.589844 11.847656 11.011719 12.21875 10.792969 12.265625 C 10.574219 12.3125 9.855469 12.578125 9.488281 12.699219 L 8.144531 13.105469 C 7.859375 13.179688 7.609375 13.1875 7.449219 13.234375 C 7.449219 13.234375 7.472656 13.453125 7.515625 13.519531 C 7.558594 13.585938 7.707031 13.75 7.882812 13.792969 C 8.058594 13.839844 8.347656 13.820312 8.480469 13.792969 C 8.613281 13.761719 8.84375 13.652344 8.871094 13.601562 C 8.902344 13.554688 8.855469 13.402344 8.910156 13.355469 C 8.960938 13.3125 9.660156 13.152344 9.921875 13.070312 L 11.328125 12.664062 C 11.285156 12.804688 10.476562 14.390625 10.214844 14.863281 C 9.953125 15.335938 8.4375 17.417969 8.113281 17.785156 L 7.070312 18.941406 C 7.121094 18.957031 7.488281 18.921875 7.554688 18.882812 C 7.972656 18.628906 8.667969 17.773438 8.890625 17.515625 C 9.558594 16.742188 10.144531 15.9375 10.605469 15.238281 C 10.699219 15.273438 11.429688 15.863281 11.617188 15.992188 C 11.808594 16.121094 12.5625 16.539062 12.726562 16.605469 C 12.886719 16.675781 13.515625 16.960938 13.539062 16.863281 C 13.566406 16.769531 13.425781 16.199219 13.355469 16.171875 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#id4)"><path fill="rgb(1.568604%, 2.349854%, 2.349854%)" d="M 9.824219 24.027344 C 9.964844 24.113281 10.113281 24.191406 10.261719 24.261719 L 11.253906 24.695312 C 11.703125 24.859375 12.15625 24.996094 12.621094 25.105469 L 13.417969 25.246094 C 13.445312 25.246094 14.167969 25.335938 14.3125 25.335938 L 15.046875 25.335938 L 15.882812 25.253906 L 16.605469 25.128906 L 17.152344 24.988281 L 17.707031 24.808594 L 18.085938 24.664062 L 18.445312 24.511719 L 18.925781 24.28125 L 19.339844 24.054688 C 19.445312 24 19.691406 23.816406 19.820312 23.816406 C 19.964844 23.816406 20.0625 23.945312 20.0625 24.054688 C 20.0625 24.289062 19.746094 24.359375 19.601562 24.464844 C 19.445312 24.570312 19.257812 24.648438 19.097656 24.738281 C 18.769531 24.90625 18.4375 25.050781 18.121094 25.171875 C 17.707031 25.324219 17.25 25.46875 16.84375 25.566406 L 16.378906 25.664062 C 16.296875 25.679688 15.453125 25.808594 15.214844 25.808594 L 14.144531 25.808594 L 13.273438 25.710938 L 12.5 25.566406 L 11.90625 25.414062 C 11.582031 25.324219 11.269531 25.210938 10.957031 25.09375 C 10.394531 24.882812 9.808594 24.609375 9.253906 24.25 C 9.15625 24.183594 9.148438 24.121094 9.148438 24.046875 C 9.148438 23.984375 9.171875 23.929688 9.21875 23.882812 C 9.265625 23.835938 9.320312 23.8125 9.386719 23.816406 C 9.515625 23.816406 9.777344 24 9.824219 24.023438 M 15.054688 6.214844 L 15.054688 19.710938 C 15.042969 19.753906 15.023438 19.796875 14.996094 19.832031 C 14.980469 19.855469 14.949219 19.886719 14.921875 19.894531 C 14.71875 19.976562 5.5625 23.011719 5.445312 23.011719 C 5.347656 23.011719 5.257812 22.945312 5.207031 22.84375 C 5.207031 22.835938 5.199219 22.828125 5.199219 22.8125 L 5.199219 9.3125 C 5.214844 9.273438 5.226562 9.214844 5.257812 9.183594 C 5.320312 9.097656 5.4375 9.078125 5.503906 9.054688 C 5.648438 9.007812 14.664062 6.019531 14.792969 6.019531 C 14.875 6.019531 15.054688 6.074219 15.054688 6.222656 Z M 14.558594 19.507812 L 5.691406 22.421875 L 5.691406 9.507812 L 14.558594 6.589844 L 14.558594 19.507812 " fill-opacity="1" fill-rule="evenodd"/></g><g clip-path="url(#id5)"><path fill="rgb(1.568604%, 2.349854%, 2.349854%)" d="M 22.933594 3.628906 L 22.933594 19.875 C 22.925781 20.058594 22.792969 20.140625 22.671875 20.140625 C 22.566406 20.140625 21.804688 19.882812 21.671875 19.84375 L 18.597656 18.902344 L 17.914062 18.6875 L 17.3125 18.5 L 14.6875 17.683594 C 14.652344 17.671875 14.574219 17.5625 14.574219 17.539062 L 14.574219 6.191406 C 14.589844 6.148438 14.605469 6.101562 14.644531 6.070312 C 14.710938 5.996094 17.5 5.082031 18.597656 4.71875 C 18.890625 4.613281 22.558594 3.371094 22.671875 3.371094 C 22.746094 3.367188 22.808594 3.390625 22.859375 3.441406 C 22.910156 3.492188 22.933594 3.554688 22.933594 3.625 Z M 22.4375 19.570312 L 15.0625 17.304688 L 15.0625 6.421875 L 22.4375 3.949219 L 22.4375 19.570312 " fill-opacity="1" fill-rule="evenodd"/></g><g clip-path="url(#id6)"><path fill="rgb(1.568604%, 2.349854%, 2.349854%)" d="M 24.804688 22.972656 L 14.949219 19.871094 L 14.992188 6.367188 L 24.804688 9.453125 L 24.804688 22.972656 " fill-opacity="1" fill-rule="nonzero"/></g><path fill="rgb(100%, 100%, 100%)" d="M 19.257812 10.222656 L 20.527344 10.601562 L 22.839844 18.835938 L 21.53125 18.449219 L 21.0625 16.757812 L 18.367188 15.953125 L 17.789062 17.328125 L 16.484375 16.9375 Z M 19.835938 12.402344 L 18.871094 14.710938 L 20.648438 15.242188 L 19.839844 12.402344 " fill-opacity="1" fill-rule="evenodd"/></svg>
+      <span class="quantity"> LANGUAGE </span>
+      <span class="text text--3"> telugu,english,hindi </span>
+    </div>
+    <div class="item item--4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M22 17.002a6.002 6.002 0 0 1-4.713 5.86l-.638-1.914A4.003 4.003 0 0 0 19.465 19H17a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h2.938a8.001 8.001 0 0 0-15.876 0H7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5C2 6.477 6.477 2 12 2s10 4.477 10 10V17.002zM20 17v-4h-3v4h3zM4 13v4h3v-4H4z"/> </g> </svg>
+      <span class="quantity"> SERVICES </span>
+      <span class="text text--4"><a href="contact.html"> Customer care 24/7</a> </span>
+    </div>
+  </div>
+  <br>  <br>
+
+                
+<div class="rowsss">
+  <div class="columnnn">
+    <div class="carddd">
+      <h3>Blockchain Technology Era</h3>
+
+      <p>An era full of business oppurtunities</p>
+    </div>
+  </div>
+                   
+  <br>
+  <br>
+  <br>
+  <br>  <br>
+  
+               
+                  <br>
+                  <br>  <br>
+                  <div class="tabling">
+                  <div class="tbl-header">
+                  <table class="responstables" cellpadding="0" cellspacing="0" border="0">
+                              
+  <thead>
+    <tr>
+      <th>Name</th>
+  
+      <th>withdraw</th>
+     
+    </tr>
+  </thead>
+  </table>
+  </div>
+
+  <div class="tbl-content">
+    <table class="responstable" cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr>
+      <td>Wayne Rooney</td>
+     
+      <td>320</td>
+    
+    </tr>
+    <tr>
+      <td>Bobby Charlton</td>
+  
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Gary Lineker</td>
+ 
+      <td>630</td>
+    </tr>
+    <tr>
+      <td>Jimmy Greaves</td>
+   
+      <td>1020</td>
+    </tr>
+    <tr>
+      <td>Michael Owen </td>
+ 
+      <td>850</td>
+    </tr>
+    <tr>
+      <td>Alan Shearer</td>
+ 
+      <td>900</td>
+    </tr>
+    <tr>
+      <td>Tom Finney</td>
+
+      <td>190</td>
+   
+    </tr>
+    <tr>
+      <td>Nat Lofthouse</td>
+     
+      <td>410</td>
+    </tr>
+    <tr>
+      <td>Vivian Woodward</td>
+    
+      <td>920</td>
+    </tr>
+    <tr>
+      <td>Frank Lampard</td>
+   
+      <td>810</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                <hr>
+                <nav class="nav">
+                  <a href="MAINPAGE.html" class="nav__link">
+                   
+                    <i class="fa fa-home" style="font-size:24px;color:green"></i>
+                
+                  <span class="nav__text">Home</span>
+                  </a>
+                
+                  <a href="assets.html" class="nav__link">
+                    <img src="markettrend.jpg" width="35" height="40">
+                
+                    <span class="nav__text">Market</span>
+                  </a>
+                  <a href="assetss.html" class="nav__link">
+                   <img src="wallet.png" width="30" height="30">
+                    <span class="nav__text" >Assets</span>
+                  
+                  </a>
+                  <a href="mine.html" class="nav__link">
+                    <img src="user.jpg" width="35" height="40">
+                    <span class="nav__text" >Profile</span>
+                  
+                  </a>
+                </nav>
+
+                      <script>
+                      firebase.auth().onAuthStateChanged((user) => {
+                        if (user) {
+                      
+                          firebase.database().ref('logindetails').child(user.uid).once("value").then(function(snapshot)
+                          {
+                            alert("welcome"+" "+snapshot.val().usersname+"  :)  ");
+                      document.getElementById("userss").innerHTML=snapshot.val().usersname;
+                      document.getElementById("email").innerHTML=snapshot.val().email;
+                      document.getElementById("bal").innerHTML=snapshot.val().balance;
+                          });
+                        
+                        } else {
+                         
+                        }
+                      });   
+                      $(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+                    </script>    
+                    <script>
+                      const slideGallery = document.querySelector('.slides');
+const slides = slideGallery.querySelectorAll('div');
+const thumbnailContainer = document.querySelector('.thumbnails');
+const slideCount = slides.length;
+const slideWidth = 540;
+
+const highlightThumbnail = () => {
+  thumbnailContainer
+    .querySelectorAll('div.highlighted')
+    .forEach(el => el.classList.remove('highlighted'));
+  const index = Math.floor(slideGallery.scrollLeft / slideWidth);
+  thumbnailContainer
+    .querySelector(`div[data-id="${index}"]`)
+    .classList.add('highlighted');
+};
+
+const scrollToElement = el => {
+  const index = parseInt(el.dataset.id, 10);
+  slideGallery.scrollTo(index * slideWidth, 0);
+};
+
+thumbnailContainer.innerHTML += [...slides]
+  .map((slide, i) => `<div data-id="${i}"></div>`)
+  .join('');
+
+thumbnailContainer.querySelectorAll('div').forEach(el => {
+  el.addEventListener('click', () => scrollToElement(el));
+});
+
+slideGallery.addEventListener('scroll', e => highlightThumbnail());
+
+highlightThumbnail();
+
+                    </script> 
+                    <script>
+                      function getRandomColor() {
+                          var letters = '0123456789ABCDEF';
+                          var color = '#';
+                          for (i = 0; i < 6; i++ ) {
+                              color += letters[Math.floor(Math.random() * 16)];
+                          }
+                          return color;
+                      }
+                      $marquee = document.getElementById('marquee');
+$marquee.style.color = getRandomColor();
+                      </script>  
+    </body>
+</html>

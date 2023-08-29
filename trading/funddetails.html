@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <style>
+              .ssss{
+        position:absolute;
+       
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    
+     
+        padding: 30;
+        padding-inline-start: 0cqmax;
+        width: 1000;
+        margin-top: 4%;
+        
+      
+ 
+        
+      }
+
+  
+  ul li {
+    background: #ffe5e5;
+    margin: 100px;
+    
+  }
+  
+  ul {
+    background: #3399ff;
+    padding: 20px;
+    
+   
+  }
+  
+  .ssss{
+    position:absolute;
+   
+    align-items: center;
+    align-content: center;
+    text-align: center;
+      
+    padding: 30;
+    padding-inline-start: 0cqmax;
+    width:970;
+
+    
+  }
+      </style>
+
+<style>
+  table {
+   
+  
+    text-align: center;
+  }
+  th {
+    background-color: #4287f5;
+    color: white;
+  }
+  th,
+  td {
+    width: 1000px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .M{
+            background-color:skyblue;
+    border-style:ridge;
+    text-align:center;
+    border-style:inset;
+    border-color:rgb(#ff00007c, rgb(132, 230, 132), rgb(20, 20, 70));
+    text-align:center;
+    border-style:inset;
+    background-image: url(hg.gif);
+background-color:skyblue;
+
+font-family: Arial, Helvetica, sans-serif;
+
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  box-shadow: 5px 5px 8px orangered, 10px 10px 8px lightgray,10px 10px 8px green;
+}
+
+        </style>
+
+    </head>
+    <body>
+       
+             <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script>
+            const firebaseConfig = {
+    apiKey: "AIzaSyBa7C5AxqXG4vJSFuAzbpY8Nkp2Urj44Ng",
+    authDomain: "tradingg-9b8db.firebaseapp.com",
+    projectId: "tradingg-9b8db",
+    storageBucket: "tradingg-9b8db.appspot.com",
+    messagingSenderId: "171828512216",
+    appId: "1:171828512216:web:8a6b42de5fbead7f90dead",
+    measurementId: "G-3JV2TE5XV4"
+  };
+  firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+        </script>
+         <div  class="M">
+          <h1 ><font color="yellow">Fund Details</font></h1>
+      
+        </div>
+        <div class="ssss">
+            <div class="container mt-3">
+           <table class="table table-dark text">
+              <thead>
+                  <th>S.no</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>RESULT</th>
+                  
+                 
+                 
+              </thead>
+              <tbody id="tbody1">
+          
+              </tbody>
+           </table>
+           </div>
+          </div>
+          
+          <script>
+             var studentNo;
+              function SelectAllData()
+              { 
+                                                    document.getElementById("tbody1").innerHTML="";
+                                                    studentNo=0;
+
+
+                                                    firebase.auth().onAuthStateChanged((user) => {
+                                                              if (user) {
+                                                            
+                                                                firebase.database().ref('logindetails').child(user.uid).child("betting").once("value",
+                                                    function(AllRecords){
+                                                    AllRecords.forEach(
+                                                    function(CurrentRecord){
+                                                    
+                                                    
+                                                   
+                                                    var d =CurrentRecord.val().date;
+                                                    var t =CurrentRecord.val().time;
+                                                    var c =CurrentRecord.val().call;
+                                                    AddItemsToTable(d,t,c);
+                                                        }
+                                                    )
+                                                    });
+
+
+
+                                                              } 
+                                                            });   
+                    
+              
+    
+              }
+                  
+              var stdList=[];
+              function AddItemsToTable(date,time,call){
+              var tbody=document.getElementById("tbody1");
+              var trow=document.createElement('tr');
+              var td0=document.createElement('td');
+              var td1=document.createElement('td');
+              var td2=document.createElement('td');
+              var td3=document.createElement('td');
+            
+              
+              stdList.push([date,time,call]);
+              td0.innerHTML=++studentNo;
+              td1.innerHTML=date;
+              td2.innerHTML=time;
+              td3.innerHTML=call;
+              
+              trow.appendChild(td0);
+              trow.appendChild(td1);
+              trow.appendChild(td2);
+              trow.appendChild(td3);
+          
+              tbody.appendChild(trow);
+              } 
+              window.onload = SelectAllData;
+                              
+          </script>
+    </body>
+</html>

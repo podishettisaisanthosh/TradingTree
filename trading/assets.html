@@ -1,0 +1,376 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+ .t1{
+    border-radius: 5%;
+    border-style: groove;
+    border-color: purple;
+    background-color: black;
+    height: 120;
+    width: 100%;
+    opacity: 0.6;
+    color:yellow;
+ 
+ } 
+ .t2{
+    border-radius: 5%;
+    border-style: groove;
+    border-color: purple;
+    background-color: green;
+    height: 120;
+    width: 100%;
+    opacity: 0.8;
+    color:yellow;
+ 
+ } body {
+  font-family: 'Helvetica', 'Calibri', sans-serif;
+  font-size:1rem;
+  margin: 1rem 3rem;
+}
+
+label {
+  color: slateGray;
+  font-size: 0.8rem;
+}
+
+input, button {
+  width: 100%;
+  font-size: 1rem;
+  line-height:1rem;
+}
+
+input {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+fieldset {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  box-shadow: 0px 0px 2px rgba(0,0,0,1);
+  background-color: rgb(240,240,240);
+}
+
+legend, button {
+  background-color: skyBlue;
+  padding: 0.75rem;
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  transform: translateX(-1.1rem);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.8);
+}
+
+button {
+  transform: none;
+  box-shadow: none;
+}
+
+button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+legend:after {
+  content: "";
+  height: 0;
+  width:0;
+  background-color: transparent;
+  border-top: 0.0rem solid transparent;
+  border-right:  0.35rem solid black;
+  border-bottom: 0.45rem solid transparent;
+  border-left: 0.0rem solid transparent;
+  position:absolute;
+  left:-0.075rem;
+  bottom: -0.45rem;
+}
+button {
+ padding: 17px 40px;
+ border-radius: 50px;
+ border: 0;
+ background-color: white;
+ box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ font-size: 15px;
+ transition: all .5s ease;
+}
+
+button:hover {
+ letter-spacing: 3px;
+ background-color: hsl(261deg 80% 48%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+ letter-spacing: 3px;
+ background-color: hsl(261deg 80% 48%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+ transform: translateY(10px);
+ transition: 100ms;
+}
+  
+    </style>
+    <style>
+       
+        .nav {
+        position: fixed;
+        left:0%;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+    }
+    
+    .nav__link:hover {
+        background-color: #eeeeee;
+    }
+    
+    .nav__link--active {
+        color: #009578;
+    }
+    
+    .nav__icon {
+        font-size: 18px;
+    }
+    .nav{
+  position: fixed;
+}
+    </style>
+</head>
+<body>
+    
+   <div>
+   
+    <fieldset>
+        <legend>TRADING 1:</legend>
+       ADA <button id="ss" onclick="window.location='graphs.html'"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       </fieldset>
+    </div>
+
+<br>
+
+
+    <div>
+   
+        <fieldset>
+            <legend>TRADING 2:</legend>
+           APA <button id="ss1"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           </fieldset>
+        </div>
+        <br>
+        <div>
+   
+            <fieldset>
+                <legend>TRADING 3:</legend>
+               AR<button id="ss2"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               </fieldset>
+            </div>
+<br>
+            <div>
+   
+                <fieldset>
+                    <legend>TRADING 4:</legend>
+                   BNB <button id="ss3"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   </fieldset>
+                </div>
+                <br>
+                <div>
+       
+                    <fieldset>
+                        <legend>TRADING 5:</legend>
+                       BTC <button id="ss4"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </fieldset>
+                    </div>
+<br>
+<div>
+
+    <fieldset>
+        <legend>TRADING 6:</legend>
+       CNZ <button id="ss5"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       </fieldset>
+    </div>
+    <br>
+    <div>
+
+        <fieldset>
+            <legend>TRADING 7:</legend>
+           CRV <button id="ss6"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           </fieldset>
+        </div>
+        <br>
+            <div>
+   
+                <fieldset>
+                    <legend>TRADING 8:</legend>
+                   DOGE <button id="ss7"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   </fieldset>
+                </div>
+                <br>
+                <div>
+       
+                    <fieldset>
+                        <legend>TRADING 9:</legend>
+                       DOT <button id="ss8"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </fieldset>
+                    </div>
+                    <br>
+                    <div>
+           
+                        <fieldset>
+                            <legend>TRADING 10:</legend>
+                           ENS <button id="ss9"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           </fieldset>
+                        </div>
+                        <nav class="nav">
+                          <a href="MAINPAGE.html" class="nav__link">
+                           
+                            <i class="fa fa-home" style="font-size:24px;color:green"></i>
+                        
+                          <span class="nav__text">Home</span>
+                          </a>
+                        
+                          <a href="assets.html" class="nav__link">
+                            <img src="markettrend.jpg" width="35" height="40">
+                        
+                            <span class="nav__text">Market</span>
+                          </a>
+                          <a href="assetss.html" class="nav__link">
+                           <img src="wallet.png" width="30" height="30">
+                            <span class="nav__text" >Assets</span>
+                          
+                          </a>
+                          <a href="mine.html" class="nav__link">
+                            <img src="user.jpg" width="35" height="40">
+                            <span class="nav__text" >Profile</span>
+                          
+                          </a>
+                        </nav>
+        
+
+</body>
+<script>
+   
+setInterval(myTimer, 1000);
+
+function myTimer() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss").innerHTML = d
+}
+setInterval(myTimer1, 1000);
+
+function myTimer1() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss1").innerHTML = d
+}
+setInterval(myTimer2, 1000);
+
+function myTimer2() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss2").innerHTML = d
+}
+setInterval(myTimer3, 1000);
+
+function myTimer3() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss3").innerHTML = d
+}
+setInterval(myTimer4, 1000);
+
+function myTimer4() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss4").innerHTML = d
+}setInterval(myTimer5, 1000);
+
+function myTimer5() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss5").innerHTML = d
+}
+setInterval(myTimer6, 1000);
+
+function myTimer6() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss6").innerHTML = d
+}
+setInterval(myTimer7, 1000);
+
+function myTimer7() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss7").innerHTML = d
+}
+setInterval(myTimer8, 1000);
+
+function myTimer8() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss8").innerHTML = d
+}
+setInterval(myTimer9, 1000);
+
+function myTimer9() {
+    const max = 4
+const min= 2
+  const d = Math.random()*(max - min)
+  document.getElementById("ss9").innerHTML = d
+}
+</script>
+</html>

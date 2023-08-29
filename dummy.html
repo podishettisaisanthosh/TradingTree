@@ -1,0 +1,569 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+       <title>
+       Trading WEBSITE
+       </title>
+       <STYLE>
+        .a1
+{
+  position:absolute;
+  width:180%;
+
+  top:1%;
+  height:30%;
+  border-radius:1% ;
+  
+  box-shadow: 1px 1px 15px purple;
+}
+@font-face {
+  font-family:myFirstFont;
+  src: url(monst.otf);
+
+}
+.a1{
+    background-color: black;
+}
+.a1
+{
+  scroll-behavior: smooth;
+font-family:myFirstFont;
+background: black;
+color:white;
+}
+.a2
+{
+  color:greenyellow;
+  font-size: larger;
+}
+
+
+.box1:hover{
+  
+  background:violet;
+  color:white;
+  opacity:0.3;
+  
+}
+button {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #212121;
+ color: #ae00ff;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 15px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 20px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+button:hover {
+ box-shadow: 0 0 10px lightgreen, 0 0 25px #001eff, 0 0 50px lightgreen;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+button span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, lightgreen);
+}
+
+button:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+button span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, lightgreen);
+}
+
+button:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+button:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, lightgreen, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px lightgreen, 0 0 8px #001eff, 0 0 8px lightgreen;
+ transition: 0.1s;
+}
+
+button:active span:nth-child(1) 
+span:nth-child(2) 
+span:nth-child(2) 
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+       </STYLE>
+       <style>
+        .nav {
+        position: fixed;
+        left:0%;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+    }
+    
+    .nav__link:hover {
+        background-color: #eeeeee;
+    }
+    
+    .nav__link--active {
+        color: #009578;
+    }
+    
+    .nav__icon {
+        font-size: 18px;
+    }
+    .card {
+       width: 330px;
+ height: 400px;
+ color: white;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ gap: 90px;
+ overflow: visible;
+
+}
+
+.card .item {
+ border-radius: 10px;
+ width: 150%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ 
+
+}
+
+.item:hover {
+ transform: scale(0.95);
+ transition: all 0.3s;
+}
+
+.item svg {
+ width: 100px;
+ height: 40px;
+
+}
+
+.item--1 {
+ background:red
+}
+
+.item--2 {
+  background: #a9ecbf;
+ 
+}
+
+.item--3 {
+  background: #c7c7ff;
+}
+
+
+.quantity {
+ font-size: 25px;
+ font-weight: 800;
+}
+
+.text {
+ font-size: 12px;
+ font-family: inherit;
+ font-weight: 600;
+}
+
+.text--1 {
+  color: yellow;
+ 
+}
+
+.text--2 {
+ color: red
+}
+
+.text--3 {
+  color:red
+}
+
+.text--4 {
+ color: rgba(220,91,183,1);
+}
+.hj{
+  position: absolute;
+  margin-top: 300;
+  align-items: center;
+  text-align: center;
+  margin-left: 20;
+  margin-right: 20;
+  margin-bottom: auto;
+}
+
+       </style>
+
+    </head>
+    <style>
+  
+      ul li {
+        background: #ffe5e5;
+        margin: 100px;
+        
+      }
+      
+      ul {
+        background: #3399ff;
+        padding: 20px;
+        
+       
+      }
+      
+      .ssss{
+        position:absolute;
+       
+        align-items: center;
+        align-content: center;
+        text-align: center;
+       margin-left: 20;
+       margin-right: 20;
+        padding: 30;
+        padding-inline-start: 0cqmax;
+        width: 620;
+ 
+        
+      }
+          </style>
+ <style>
+  .nav {
+  position: fixed;
+  left:0%;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: auto;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+  background-color: #eeeeee;
+}
+
+.nav__link--active {
+  color: #009578;
+}
+
+.nav__icon {
+  font-size: 18px;
+}  @font-face {
+       font-family: myFirstFont;
+       src: url(sansation_light.woff);
+    }
+    
+    * {
+       font-family: myFirstFont;
+    }
+
+
+ </style>
+  <style>
+      table {
+       
+      
+        text-align: center;
+      }
+      th {
+        background-color: #4287f5;
+        color: white;
+      }
+      th,
+      td {
+        width: 800px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      
+    </style>
+    <body>
+      <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+        <script>
+            const firebaseConfig = {
+    apiKey: "AIzaSyBa7C5AxqXG4vJSFuAzbpY8Nkp2Urj44Ng",
+    authDomain: "tradingg-9b8db.firebaseapp.com",
+    projectId: "tradingg-9b8db",
+    storageBucket: "tradingg-9b8db.appspot.com",
+    messagingSenderId: "171828512216",
+    appId: "1:171828512216:web:8a6b42de5fbead7f90dead",
+    measurementId: "G-3JV2TE5XV4"
+  };
+  firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+        </script>
+      <nav class="nav">
+        <a href="MAINPAGE.html" class="nav__link">
+         
+          <i class="fa fa-home" style="font-size:24px;color:green"></i>
+      
+        <span class="nav__text">Home</span>
+        </a>
+      
+        <a href="" class="nav__link">
+      
+          <i class='fas fa-bullhorn'></i>
+          <span class="nav__text">Market</span>
+        </a>
+        <a href="" class="nav__link">
+
+          <span class="nav__text" >Assets</span>
+        
+        </a>
+        <a href="" class="nav__link">
+      
+          <span class="nav__text" >Profile</span>
+        
+        </a>
+      </nav>
+        <div class="a1">
+            <img src="boy.jpg" height="30%"  style="position:absolute;left:80%">
+            <h3 class="a2" style="font-family:algeria;" align="center" >TRADING TREE</h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User : <span id="userss"> NaN</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email : <span id="email"> NaN</span></p>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance : <i class="fa fa-rupee" style="font-size:x-large;color:green"></i><span id="bal" style="font-size: x-large;color:green">NaN</span></span>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><button  align="center">
+             <span></span>
+             
+  <span></span>
+  <span></span>
+  
+  <span></span>Recharge</button>&nbsp;&nbsp;
+            <button  onclick="withdraw()" align="center" class="bttt">
+                <span></span>
+  <span></span>
+  <span></span>
+  <span></span> Withdraw</button>
+
+                      </div>
+                     
+                      <div class="hj">
+                      <div class="card">
+                        <div class="item item--1">
+                        <!--?xml version="1.0" encoding="UTF-8"?--><svg style="color: red" width="45" height="45" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"></rect><path d="M48 0H0V48H48V0Z" fill="red" fill-opacity="0.01"></path><circle cx="24" cy="24" r="20" stroke="#333" stroke-width="1" stroke-linejoin="round"></circle><path d="M4.40002 20C6.2531 29.129 14.3242 36 24 36C33.6758 36 41.7468 29.129 43.5999 20" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="red"></path><path d="M5.66418 16C8.7504 23.0636 15.7987 28 24 28C32.2013 28 39.2496 23.0636 42.3358 16" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="red"></path><path d="M7.99854 12C11.6474 16.8578 17.4567 20 24 20C30.5433 20 36.3526 16.8578 40.015 12" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="red"></path><path d="M11.998 8C15.341 10.5116 19.4967 12 24 12C28.5033 12 32.659 10.5116 36.0019 8" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="red"></path></svg>
+                          <span class="quantity"> RED </span>
+                          <button>Bet</button>
+                          <span class="text text--1"> bet on red get *2 times </span>
+                       
+                        </div>
+                        <div class="item item--2">
+                    <!--?xml version="1.0" encoding="UTF-8"?--><svg style="color: rgb(57, 243, 95);" width="45" height="45" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"></rect><path d="M48 0H0V48H48V0Z" fill="#39f35f" fill-opacity="0.01"></path><circle cx="24" cy="24" r="20" stroke="#333" stroke-width="1" stroke-linejoin="round"></circle><path d="M4.40002 20C6.2531 29.129 14.3242 36 24 36C33.6758 36 41.7468 29.129 43.5999 20" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#39f35f"></path><path d="M5.66418 16C8.7504 23.0636 15.7987 28 24 28C32.2013 28 39.2496 23.0636 42.3358 16" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#39f35f"></path><path d="M7.99854 12C11.6474 16.8578 17.4567 20 24 20C30.5433 20 36.3526 16.8578 40.015 12" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#39f35f"></path><path d="M11.998 8C15.341 10.5116 19.4967 12 24 12C28.5033 12 32.659 10.5116 36.0019 8" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#39f35f"></path></svg>
+                    <span class="quantity"> GREEN </span>
+                    <button>Bet</button>
+                    <span class="text text--2"> bet on green get *2 times </span>
+                        </div>
+                       
+                      
+                        </div>
+                      </div>
+                      <hr>
+                      <hr>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br><br>  <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>  <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                                    <div class="ssss">
+                                      <div class="container mt-3">
+                                     <table class="table table-dark text">
+                                        <thead>
+                                            <th>S.no</th>
+                                            <th>IDS</th>
+                                            <th>RESULT</th>
+                                           
+                                           
+                                        </thead>
+                                        <tbody id="tbody1">
+                                    
+                                        </tbody>
+                                     </table>
+                                     </div>
+                                    </div>
+                                    
+                                    <script>
+                                    firebase.auth().onAuthStateChanged((user) => {
+                                      if (user) {
+                                    
+                                        firebase.database().ref('logindetails').child(user.uid).once("value").then(function(snapshot)
+                                        {
+                                    document.getElementById("userss").innerHTML=snapshot.val().usersname;
+                                    document.getElementById("email").innerHTML=snapshot.val().email;
+                                    document.getElementById("bal").innerHTML=snapshot.val().balance;
+                                        });
+                                      
+                                      } else {
+                                       
+                                      }
+                                    });   
+              var studentNo;
+              function SelectAllData()
+              { 
+              document.getElementById("tbody1").innerHTML="";
+              studentNo=0;
+              firebase.database().ref('logindetails').child("parity").once("value",
+              function(AllRecords){
+              AllRecords.forEach(
+              function(CurrentRecord){
+              var i =CurrentRecord.val().idss;
+              
+              var c =CurrentRecord.val().color;
+              AddItemsToTable(i,c);
+                  }
+              )
+              });
+              }
+                  
+              var stdList=[];
+              function AddItemsToTable(idss,color){
+              var tbody=document.getElementById("tbody1");
+              var trow=document.createElement('tr');
+              var td0=document.createElement('td');
+              var td1=document.createElement('td');
+              var td2=document.createElement('td');
+              
+              stdList.push([idss,color]);
+              td0.innerHTML=++studentNo;
+              td1.innerHTML=idss;
+              td2.innerHTML=color;
+              trow.appendChild(td0);
+              trow.appendChild(td1);
+              trow.appendChild(td2);
+              tbody.appendChild(trow);
+              } 
+              window.onload = SelectAllData;
+                                  </script>  
+                
+                <hr>
+                      <script>
+                      firebase.auth().onAuthStateChanged((user) => {
+                        if (user) {
+                      
+                          firebase.database().ref('logindetails').child(user.uid).once("value").then(function(snapshot)
+                          {
+                      document.getElementById("userss").innerHTML=snapshot.val().usersname;
+                      document.getElementById("email").innerHTML=snapshot.val().email;
+                      document.getElementById("bal").innerHTML=snapshot.val().balance;
+                          });
+                        
+                        } else {
+                         
+                        }
+                      });    
+                    </script>       
+    </body>
+</html>
